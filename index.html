@@ -16,22 +16,41 @@
     <section class="header">
         <a href="" class="logo"><img src="crown-symbol.png" alt="">Golden Grill</a>
         <nav class="navbar">
-            <a href="home">Home</a>
-            <a href="about" >about</a>
-            <a href="food">food</a>
-            <a href="gallery">gallery</a>
-            <a href="order" >Orders</a>
-            <a href="blogs">blogs</a>
+            <a onclick="home()" onclick="showHome()" href="home">Home</a>
+            <a onclick="about()" onclick="showAbout()" href="about" >about</a>
+            <a onclick="food()" href="food">food</a>
+            <a onclick="gallery()" href="gallery">gallery</a>
+            <a onclick="order()" href="order" >Orders</a>
+            <a onclick="contact()" href="contact">Contact</a>
 
         </nav>
-        <div id="menu-btn" ><i class="fa-solid fa-bars fa-2xl"></i></div>
+        <div id="menu-btn" > <i class="fa-solid fa-bars fa-2xl"></i></div>
+        
+        
+        <div class="icon">
+            <i onclick="login()" onclick="showLogin()" class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
     </section>
+    
 
 <!--------------------------- home section start------------------------ -->
+
+
 <section class="home" id="home">
+    
    <div class=" swiper home-slider">
      <div class="swiper-wrapper">
             <div class=" swiper-slide slide" style="background-image: url('1076692.jpg');">
+                <div class="login">
+                    <h1>Sign up</h1>
+                    <input type="text" placeholder="Enter your name">
+                    <input type="number" placeholder="Enter your mobile number"> 
+                    <input type="password" placeholder="Enter your password "><br>
+                    <button>sign up</button>
+                    <!-- <p>already a user?</p>
+                    <a href="#">Log in</a> -->
+                </div>
                 <div class="content">
                     <span>outstanding food</span>
                     <h3>delicious cooking</h3>
@@ -57,58 +76,59 @@
         <div class="swiper-button-prev"></div>
    </div>
 </section>
-
 <!----------------------------home section End----------------------------->
 
 <!-- ------------------------------about section starts----------------------- -->
 <section class="about">
-    <div class="image">
-        <img src="post-thumb-5.jpg" alt="">
-    </div>
 
     <div class="content">
         <h1 class="heading1">Welcome to our Restaurant</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptates eligendi quibusdam tempore?</p>
-        <a href="#" class="btn">read more</a>
+        <p>Catering is a critical component of your event, so we take the same care with our catered meals as we do in our restaurant. 
+            Serving the highest quality of food and providing superior service, each dish uses the freshest ingredients and spices imported exclusively from India.
+             Custom equipment made to our specifications ensures we deliver the honest flavors of India and remain faithful to the family recipes handed down for generations.
+              Since 1998, Golden Grill has been serving authentic Indian food in the Denver Metro Area and our chefs, who began their careers in Northern India, have mastered the art of preparing classic Indian cuisine.
+               Residents have voted the Baidwan family’s 
+            Golden Grill Restaurant & Bar the Best Indian Restaurant and Best Lunch Buffet for 16 years in a row.</p>
+        <a href="https://www.littleindiaofdenver.com/blog/" target="_black" class="btn">read blogs</a>
+    </div>
+    <div class="imagechange">
     </div>
 </section>
-
-
-
 <!-- ------------------------------about section ends----------------------- -->
 
-<!-- ------------------------------Food section starts----------------------- -->
 
+
+<!-- ------------------------------Food section starts----------------------- -->
 <section class="food">
     <div class="heading">
-        <span>popular dishes</span>
+        <span>popular food</span>
         <h3>our delicious food</h3>
     </div>
     <div class="swiper food-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide slide">
-                <img src="feature-small-1.png" alt="">
-                <h3>delicious food</h3>
+                <img src="Burger.png" alt="">
+                <h3>Burger</h3>
                 <div class="price">$49.99</div>
             </div>
             <div class="swiper-slide slide">
-                <img src="feature-small-2.png" alt="">
-                <h3>delicious food</h3>
+                <img src="fried-chicken.png" alt="">
+                <h3>Fried chicken</h3>
                 <div class="price">$49.99</div>
             </div>
             <div class="swiper-slide slide">
-                <img src="feature-small-3.png" alt="">
-                <h3>delicious food</h3>
+                <img src="french fries.png" alt="">
+                <h3>French fries</h3>
                 <div class="price">$49.99</div>
             </div>
             <div class="swiper-slide slide">
-                <img src=" feature-small-4.png" alt="">
-                <h3>delicious food</h3>
+                <img src="pizzaa.png" alt="">
+                <h3>Pizza</h3>
                 <div class="price">$49.99</div>
             </div>
             <div class="swiper-slide slide">
                 <img src="home-img-1.png" alt="">
-                <h3>delicious food</h3>
+                <h3>Noodles</h3>
                 <div class="price">$49.99</div>
             </div>
         </div>
@@ -116,6 +136,471 @@
     </div>
 </section>
 <!-- ------------------------------Food section ends----------------------- -->
+
+   <!-- ------------------------------------Image Changes start------------------------------- -->
+   <section class="imagechange">
+        
+   </section>
+    <!-- ------------------------------------Image Changes end------------------------------- -->
+
+
+    <!-- ----Gallery starts -->
+    <section class="service" id="menu">
+        <h1 class="h1">Our Gallery</h1>
+        <h2 class="heading2">Our Untold Stories</h2>
+        <div class="dish_menu">
+            <div class="box box1">
+                <div class="background background1">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>MIX <BR> VEG</BR></h4>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="box box2">
+                <div class="background background2">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>CHHOLE <BR> BHATURE</BR></h4>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="box box3">
+                <div class="background background3">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>DOSA</h4>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="box box4">
+                <div class="background background4">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>MUSHROOM<BR> CURRY</BR></h4>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+    
+    
+    
+    
+        <div class="dish_menu">
+            <div class="box box5">
+                <div class="background background5">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>EGG <BR> CURRY</BR></h4>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="box box6">
+                <div class="background background6">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>MUTTON<BR> CURRY</BR></h4>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="box box7">
+                <div class="background background7">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>CHICKEN <BR> BIRYANI</BR></h4>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="box box8">
+                <div class="background background8">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>DAL<BR> MAKHNI</BR></h4>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+    
+    
+    
+        <div class="dish_menu">
+            <div class="box box9">
+                <div class="background background9">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>PANEER<BR>BUTTER</BR>MASALA</h4>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="box box10">
+                <div class="background background10">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>PANEER<BR>TIKKA</BR></h4>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="box box11">
+                <div class="background background11">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>HAMBURGER</h4>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="box box12">
+                <div class="background background12">
+                    <div class="hover_content">
+                        <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
+                        <h4>SLICED <BR>MEAT</BR></h4>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------Gallery ends--------------------------------------- -->
+
+    <!-- ----------------------------Menu  starts -------------------------->
+
+
+        <section class="menu" id="menu">
+            <div class="heading">
+                <span>our menu</span>
+                <h3>our popular dishes</h3>
+            </div>
+
+            <div class=" swiper menu-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <h3 class="title">Breakfast</h3>
+
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="info">
+                                    <h3>POHA</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>FRIED-RICE</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>BREAD-PAKODA</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>CHHOLE-KULCHE</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>DHOKLA</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>IDLI-SAMBHAR</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide slide">
+                        <h3 class="title">lunch</h3>
+
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="info">
+                                    <h3></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>morning breakfast</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>morning breakfast</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>morning breakfast</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide slide">
+                        <h3 class="title">dinner</h3>
+
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="info">
+                                    <h3>delicious dinner</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>morning breakfast</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>morning breakfast</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>morning breakfast</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>morning breakfast</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide slide">
+                        <h3 class="title">drinks</h3>
+
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="info">
+                                    <h3>HOT-CHOCOLATE</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>OREO-SHAKE</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>BUTTERSCOTCH SHAKE</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>COFFEE</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>BANANA SHAKE</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide slide">
+                        <h3 class="title">deserts</h3>
+
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="info">
+                                    <h3>GULAB JAMUN</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>JALEBI</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>RASMALAI</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h3>KAJU-KATLI</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
+                                </div>
+                                <div class="price">$49.99</div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+    <!-- ----------------------------Menu  ends -------------------------->
+
+        <!-- ----------------------order section start----------------------- -->
+
+        <section class="order">
+            <div class="heading">
+                <span>order now</span>
+                <h3>fast home delivery</h3>
+            </div>
+
+            <form action="">
+                <div class="box-container">
+                    <div class="box">
+                        <div class="inputBox">
+                            <span>full name</span>
+                            <input type="text" placeholder="enter your name">
+                        </div>
+                        <div class="inputBox">
+                            <span>food name</span>
+                            <input type="text" placeholder="food you want">
+                        </div>
+                        <div class="inputBox">
+                            <span>order details</span>
+                            <input type="text" placeholder="speacifics with food">
+                        </div>
+                        <div class="inputBox">
+                            <span>your address</span>
+                            <textarea name="" placeholder="enter your adrress" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="inputBox">
+                            <span>number</span>
+                            <input type="number" placeholder="enter your number">
+                        </div>
+                        <div class="inputBox">
+                            <span>how much</span>
+                            <input type="number" placeholder="how many you want">
+                        </div>
+                        <div class="inputBox">
+                            <span>when you want</span>
+                            <input type="datetime-local">
+                        </div>
+                        <div class="inputBox">
+                            <span>your address</span>
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.607731406607!2d7
+                            7.59074957532003!3d27.605688676240952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce
+                            47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1700588637183!5m2!1sen!2sin" 
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="order now" class="btn">
+            </form>
+        </section>
+        <!-- ----------------------order section end----------------------- -->
+
+
+        <!-- ---------footer section -------------- -->
+
+        <section class="footer">
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>opening hours</h3>
+                    <p>07:00am to 10:00pm</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>phone</h3>
+                    <p>+91 9758122066</p>
+                    <p>+91 8840804669</p>
+                    <p>+91 7505285485</p>
+                    <p>+91 7543802602</p>
+                    
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>email</h3>
+                    <a class="mail"  href="mailto:tanishka.agrawal_cs21gla.ac.in;"target="_black" >tanishka.agrawal_cs21gla.ac.in</a>
+                    <a class="mail" href="mailto:rohit.kumar_cs21gla.ac.in;" target="_black">rohit.kumar_cs21gla.ac.in</a>
+                    <a class="mail" href="mailto:shivendra.singh_cs21gla.ac.in;" target="_black">shivendra.singh_cs21gla.ac.in</a>
+                    <a class="mail" href="mailto:yash.sharma_cs21gla.ac.in;" target="_black">yash.sharma_cs21gla.ac.in</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>address</h3>
+                    <p>mathura, india 281406</p>
+                </div>
+                
+            </div>
+            <div class="sharing">
+                <a href="" class="fa-brands fa-square-facebook" target="_black"></a>
+                <a href="#" class="fa-brands fa-square-twitter" target="_black"></a>
+                <a href="https://instagram.com/quirky_me1?igshid=NzZlODBkYWE4Ng==" target="_black" class="fa-brands fa-square-instagram"></a>
+                <a href="https://www.linkedin.com/in/tanishka-agrawal-9b0886260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_black" class="fa-brands fa-linkedin"></a>
+            </div>
+            <div class="credit"> created by <span>the fouriers</span> | all rights reserved!</div>
+        </section>
+
 
 
 

@@ -7,6 +7,18 @@ menuBtn.onclick = () =>{
     navbar.classList.toggle('active');
 
 };
+
+
+function login(){
+  let log = document.querySelector(".login");
+  log.style.display="block"
+}
+
+function about(){
+  let about = document.querySelector(".");
+  about.style.display="block"
+}
+
 var swiper = new Swiper(".home-slider", {
     grabCursor:true,
     loop:true,
@@ -14,9 +26,9 @@ var swiper = new Swiper(".home-slider", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
+});
 
-  var swiper = new Swiper(".food-slider", {
+var swiper = new Swiper(".food-slider", {
     grabCursor:true,
     loop:true,
     centeredSliders:true,
@@ -37,4 +49,16 @@ var swiper = new Swiper(".home-slider", {
         },
       },
     
-  });
+});
+
+var swiper = new Swiper(".menu-slider", {
+    grabCursor: true,
+    loop: true,
+    autoHeight: true,
+    centeredSliders: true,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+});
