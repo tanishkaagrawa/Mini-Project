@@ -31,7 +31,6 @@ html{
     padding: 0.1rem 0 0.1rem 0;
     display: flex;align-items: center;
     justify-content: space-around;
-    /* border: 2px solid rgba(0, 0, 0, 0.3); */
     box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
     position: fixed;
     top:0;
@@ -91,13 +90,6 @@ html{
     font-size: 3rem;
     color: black;
 }
-/* .login p{
-    padding: 6px 0 8px 0;
-    font-size: 1.5rem;
-}
-.login a{
-    font-size: 1.8rem;
-} */
 .login input{
     border: none;
     border-bottom: 2px solid black;
@@ -242,6 +234,8 @@ html{
     color: #cd9452;
     font-size: 2.5rem;
 }
+
+
 .about{
     display: flex;
     align-items: center;
@@ -274,6 +268,72 @@ html{
 }
 
 
+
+
+
+
+
+
+.food-preview-container{
+    background-color: #262626;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-preview-container .food-preview{
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    display: none ;
+    height: 500px;
+    width: 410px;
+}
+.food-preview-container .food-preview img{
+    margin-bottom: 1rem;
+}
+.food-preview-container .food-preview h3{
+    padding: 1rem 0;
+    color: #222;
+    font-size: 2.5rem;
+}
+.food-preview-container .food-preview .stars{
+    margin-bottom: 0.5rem;  
+}
+.food-preview-container .food-preview .stars i, .price{
+    font-size:  1.7rem;
+    color: #cd9452;
+}
+.food-preview-container .food-preview p{
+    font-size: 1.6rem;
+    color: #262626;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.food-preview-container .food-preview img{
+    height: 200px;
+    width: 200px;
+}
+.food-preview-container .active{
+    display: inline-block;
+}
+#class-preview{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 6rem;
+    cursor: pointer;
+    color: white;
+}
+
 .service{
     width: 100%;
     height: auto;
@@ -297,7 +357,6 @@ html{
     width: 100%;
     height: 300px;
     display: flex;
-    background: pink;
 }
 .dish_menu .box{
     width: 400px;
@@ -431,7 +490,7 @@ html{
     line-height: 2;
 }
 .menu .slide .box-container .box .price{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #cd9452;
 }
 .menu .slide .box-container .box:hover{
@@ -568,6 +627,12 @@ font-size: 2.5rem;
     .home .slide .content h3{
         font-size: 15vw;
     }
+    .dish_menu{
+        display: inline-block;
+    }
+    .about{
+        display: inline-block;
+    }
 }
 
 @media (max-width:768px){
@@ -610,4 +675,3 @@ font-size: 2.5rem;
         font-size: 7rem;
     }
 }
-

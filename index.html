@@ -1,153 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="crown-symbol.png">
     <title>Golden Grill</title>
 </head>
+
 <body>
+
+    <!------------------navbar section start----------------->
+
     <section class="header">
         <a href="" class="logo"><img src="crown-symbol.png" alt="">Golden Grill</a>
         <nav class="navbar">
             <a onclick="home()" onclick="showHome()" href="home">Home</a>
-            <a onclick="about()" onclick="showAbout()" href="about" >about</a>
+            <a onclick="about()" onclick="showAbout()" href="about">about</a>
             <a onclick="food()" href="food">food</a>
             <a onclick="gallery()" href="gallery">gallery</a>
-            <a onclick="order()" href="order" >Orders</a>
+            <a onclick="order()" href="order">Orders</a>
             <a onclick="contact()" href="contact">Contact</a>
-
         </nav>
-        <div id="menu-btn" > <i class="fa-solid fa-bars fa-2xl"></i></div>
-        
-        
+        <div id="menu-btn"> <i class="fa-solid fa-bars fa-2xl"></i></div>
+
         <div class="icon">
-            <i onclick="login()" onclick="showLogin()" class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="./signIn.html" target="_blank"><i onclick="login()" onclick="showLogin()"
+                    class="fa-solid fa-user"></i></a>
+            <i class="fa-regular fa-heart"></i>
         </div>
     </section>
-    
 
-<!--------------------------- home section start------------------------ -->
+    <!------------------navbar section start----------------->
 
 
-<section class="home" id="home">
-    
-   <div class=" swiper home-slider">
-     <div class="swiper-wrapper">
-            <div class=" swiper-slide slide" style="background-image: url('1076692.jpg');">
-                <div class="login">
-                    <h1>Sign up</h1>
-                    <input type="text" placeholder="Enter your name">
-                    <input type="number" placeholder="Enter your mobile number"> 
-                    <input type="password" placeholder="Enter your password "><br>
-                    <button>sign up</button>
-                    <!-- <p>already a user?</p>
-                    <a href="#">Log in</a> -->
+
+    <!--------------------------- home section start------------------------ -->
+
+    <section class="home" id="home">
+        <div class=" swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide slide" style="background-image: url('1076692.jpg');">
+                    <div class="content">
+                        <span>outstanding food</span>
+                        <h3>delicious cooking</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
                 </div>
-                <div class="content">
-                    <span>outstanding food</span>
-                    <h3>delicious cooking</h3>
-                    <a href="#" class="btn">get started</a>
+                <div class=" swiper-slide  slide" style="background-image: url('slideshow-10.jpg');">
+                    <div class="content">
+                        <span>outstanding food</span>
+                        <h3>morning moment</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide  slide" style="background-image: url('slideshow-8.jpg');">
+                    <div class="content">
+                        <span>outstanding food</span>
+                        <h3>authentic kitchen</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
                 </div>
             </div>
-            <div class=" swiper-slide  slide" style="background-image: url('slideshow-10.jpg');">
-                <div class="content">
-                    <span>outstanding food</span>
-                    <h3>morning moment</h3>
-                    <a href="#" class="btn">get started</a>
-                </div>
-            </div>
-            <div class=" swiper-slide  slide" style="background-image: url('slideshow-8.jpg');">
-                <div class="content">
-                    <span>outstanding food</span>
-                    <h3>authentic kitchen</h3>
-                    <a href="#" class="btn">get started</a>
-                </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-   </div>
-</section>
-<!----------------------------home section End----------------------------->
-
-<!-- ------------------------------about section starts----------------------- -->
-<section class="about">
-
-    <div class="content">
-        <h1 class="heading1">Welcome to our Restaurant</h1>
-        <p>Catering is a critical component of your event, so we take the same care with our catered meals as we do in our restaurant. 
-            Serving the highest quality of food and providing superior service, each dish uses the freshest ingredients and spices imported exclusively from India.
-             Custom equipment made to our specifications ensures we deliver the honest flavors of India and remain faithful to the family recipes handed down for generations.
-              Since 1998, Golden Grill has been serving authentic Indian food in the Denver Metro Area and our chefs, who began their careers in Northern India, have mastered the art of preparing classic Indian cuisine.
-               Residents have voted the Baidwan family’s 
-            Golden Grill Restaurant & Bar the Best Indian Restaurant and Best Lunch Buffet for 16 years in a row.</p>
-        <a href="https://www.littleindiaofdenver.com/blog/" target="_black" class="btn">read blogs</a>
-    </div>
-    <div class="imagechange">
-    </div>
-</section>
-<!-- ------------------------------about section ends----------------------- -->
+    </section>
+    <!----------------------------home section End----------------------------->
 
 
 
-<!-- ------------------------------Food section starts----------------------- -->
-<section class="food">
-    <div class="heading">
-        <span>popular food</span>
-        <h3>our delicious food</h3>
-    </div>
-    <div class="swiper food-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide">
-                <img src="Burger.png" alt="">
-                <h3>Burger</h3>
-                <div class="price">$49.99</div>
-            </div>
-            <div class="swiper-slide slide">
-                <img src="fried-chicken.png" alt="">
-                <h3>Fried chicken</h3>
-                <div class="price">$49.99</div>
-            </div>
-            <div class="swiper-slide slide">
-                <img src="french fries.png" alt="">
-                <h3>French fries</h3>
-                <div class="price">$49.99</div>
-            </div>
-            <div class="swiper-slide slide">
-                <img src="pizzaa.png" alt="">
-                <h3>Pizza</h3>
-                <div class="price">$49.99</div>
-            </div>
-            <div class="swiper-slide slide">
-                <img src="home-img-1.png" alt="">
-                <h3>Noodles</h3>
-                <div class="price">$49.99</div>
-            </div>
+
+
+
+
+    <!-- ------------------------------about section starts----------------------- -->
+    <section class="about">
+        <div class="content">
+            <h1 class="heading1">Welcome to our Restaurant</h1>
+            <p>Catering is a critical component of your event, so we take the same care with our catered meals as we do
+                in our restaurant.
+                Serving the highest quality of food and providing superior service, each dish uses the freshest
+                ingredients and spices imported exclusively from India.
+                Custom equipment made to our specifications ensures we deliver the honest flavors of India and remain
+                faithful to the family recipes handed down for generations.
+                Since 1998, Golden Grill has been serving authentic Indian food in the Denver Metro Area and our chefs,
+                who began their careers in Northern India, have mastered the art of preparing classic Indian cuisine.
+                Residents have voted the Baidwan family’s
+                Golden Grill Restaurant & Bar the Best Indian Restaurant and Best Lunch Buffet for 16 years in a row.
+            </p>
+            <a href="https://www.littleindiaofdenver.com/blog/" target="_black" class="btn">read blogs</a>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
-</section>
-<!-- ------------------------------Food section ends----------------------- -->
-
-   <!-- ------------------------------------Image Changes start------------------------------- -->
-   <section class="imagechange">
-        
-   </section>
-    <!-- ------------------------------------Image Changes end------------------------------- -->
 
 
-    <!-- ----Gallery starts -->
+        <div class="imagechange">
+
+        </div>
+    </section>
+    <!-- ------------------------------about section ends----------------------- -->
+
+
+
+
+
+    <!-- ------------------------------Food section starts----------------------- -->
+    <section class="food">
+        <div class="heading">
+            <span>popular food</span>
+            <h3>our delicious food</h3>
+        </div>
+        <div class="swiper food-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <img src="Burger.png" alt="">
+                    <h3>Burger</h3>
+                    <div class="price">99.99 Rs</div>
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="fried-chicken.png" alt="">
+                    <h3>Fried chicken</h3>
+                    <div class="price">119.99 Rs</div>
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="french fries.png" alt="">
+                    <h3>French fries</h3>
+                    <div class="price">99.99 Rs</div>
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="pizzaa.png" alt="">
+                    <h3>Pizza</h3>
+                    <div class="price">259.99 Rs</div>
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="home-img-1.png" alt="">
+                    <h3>Noodles</h3>
+                    <div class="price">79.99 Rs</div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <!-- ------------------------------Food section ends----------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -----------------------------Gallery section  starts ------------------------------------->
+
+
+    <!------------------row1----------------->
     <section class="service" id="menu">
         <h1 class="h1">Our Gallery</h1>
-        <h2 class="heading2">Our Untold Stories</h2>
+        <h3 class="heading2">Our Untold Stories</h3>
         <div class="dish_menu">
             <div class="box box1">
                 <div class="background background1">
@@ -156,7 +174,7 @@
                         <h4>MIX <BR> VEG</BR></h4>
                     </div>
                 </div>
-        
+
             </div>
             <div class="box box2">
                 <div class="background background2">
@@ -165,7 +183,7 @@
                         <h4>CHHOLE <BR> BHATURE</BR></h4>
                     </div>
                 </div>
-        
+
             </div>
             <div class="box box3">
                 <div class="background background3">
@@ -174,7 +192,7 @@
                         <h4>DOSA</h4>
                     </div>
                 </div>
-        
+
             </div>
             <div class="box box4">
                 <div class="background background4">
@@ -183,14 +201,14 @@
                         <h4>MUSHROOM<BR> CURRY</BR></h4>
                     </div>
                 </div>
-        
+
             </div>
         </div>
-    
-    
-    
-    
-    
+
+
+
+        <!------------------row2----------------->
+
         <div class="dish_menu">
             <div class="box box5">
                 <div class="background background5">
@@ -199,7 +217,7 @@
                         <h4>EGG <BR> CURRY</BR></h4>
                     </div>
                 </div>
-        
+
             </div>
             <div class="box box6">
                 <div class="background background6">
@@ -208,7 +226,7 @@
                         <h4>MUTTON<BR> CURRY</BR></h4>
                     </div>
                 </div>
-        
+
             </div>
             <div class="box box7">
                 <div class="background background7">
@@ -217,7 +235,7 @@
                         <h4>CHICKEN <BR> BIRYANI</BR></h4>
                     </div>
                 </div>
-        
+
             </div>
             <div class="box box8">
                 <div class="background background8">
@@ -226,13 +244,14 @@
                         <h4>DAL<BR> MAKHNI</BR></h4>
                     </div>
                 </div>
-        
+
             </div>
         </div>
-    
-    
-    
-    
+
+
+
+        <!------------------row3----------------->
+
         <div class="dish_menu">
             <div class="box box9">
                 <div class="background background9">
@@ -241,7 +260,7 @@
                         <h4>PANEER<BR>BUTTER</BR>MASALA</h4>
                     </div>
                 </div>
-        
+
             </div>
             <div class="box box10">
                 <div class="background background10">
@@ -250,16 +269,16 @@
                         <h4>PANEER<BR>TIKKA</BR></h4>
                     </div>
                 </div>
-        
+
             </div>
             <div class="box box11">
                 <div class="background background11">
                     <div class="hover_content">
                         <i class="fa-regular fa-heart" style="margin-left: 20px;"></i>
-                        <h4>HAMBURGER</h4>
+                        <h4>POT PIE</h4>
                     </div>
                 </div>
-        
+
             </div>
             <div class="box box12">
                 <div class="background background12">
@@ -268,343 +287,383 @@
                         <h4>SLICED <BR>MEAT</BR></h4>
                     </div>
                 </div>
-        
+
             </div>
         </div>
     </section>
 
     <!-- ---------------------Gallery ends--------------------------------------- -->
 
+
+
+
     <!-- ----------------------------Menu  starts -------------------------->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>our menu</span>
+            <h3>our popular dishes</h3>
+        </div>
+        <!------------------breakfast----------------->
 
+        <div class=" swiper menu-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <h3 class="title">Breakfast</h3>
 
-        <section class="menu" id="menu">
-            <div class="heading">
-                <span>our menu</span>
-                <h3>our popular dishes</h3>
-            </div>
-
-            <div class=" swiper menu-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide">
-                        <h3 class="title">Breakfast</h3>
-
-                        <div class="box-container">
-                            <div class="box">
-                                <div class="info">
-                                    <h3>POHA</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
+                    <div class="box-container">
+                        <div class="box">
+                            <div class="info">
+                                <h3>POHA</h3>
+                                <p>It's refreshing, lemony and you will simply love it. 
+                                    Serve poha as is or top it with some crunchy sev.</p>
                             </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>FRIED-RICE</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>BREAD-PAKODA</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>CHHOLE-KULCHE</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>DHOKLA</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>IDLI-SAMBHAR</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
+                            <div class="price">49.99 Rs</div>
                         </div>
-                    </div>
-
-
-                    <div class="swiper-slide slide">
-                        <h3 class="title">lunch</h3>
-
-                        <div class="box-container">
-                            <div class="box">
-                                <div class="info">
-                                    <h3></h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>FRIED-RICE</h3>
+                                <p>This tastes as good as any restaurant version plus it is much healthier</p>
                             </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>morning breakfast</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>morning breakfast</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>morning breakfast</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
+                            <div class="price">59.99 Rs</div>
                         </div>
-                    </div>
-
-
-                    <div class="swiper-slide slide">
-                        <h3 class="title">dinner</h3>
-
-                        <div class="box-container">
-                            <div class="box">
-                                <div class="info">
-                                    <h3>delicious dinner</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>BREAD-PAKODA</h3>
+                                <p>North Indian breakfast & tea-time snack made with bread slices, potatoes, spices, gram flour and herbs.</p>
                             </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>morning breakfast</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>morning breakfast</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>morning breakfast</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>morning breakfast</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
+                            <div class="price">49.99 Rs</div>
                         </div>
-                    </div>
-
-
-                    <div class="swiper-slide slide">
-                        <h3 class="title">drinks</h3>
-
-                        <div class="box-container">
-                            <div class="box">
-                                <div class="info">
-                                    <h3>HOT-CHOCOLATE</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>CHHOLE-KULCHE</h3>
+                                <p>A spicy, delicious curry of white chickpeas with deep-fried bread made from maida.</p>
                             </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>OREO-SHAKE</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>BUTTERSCOTCH SHAKE</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>COFFEE</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>BANANA SHAKE</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            
+                            <div class="price">49.99 Rs</div>
                         </div>
-                    </div>
-
-
-                    <div class="swiper-slide slide">
-                        <h3 class="title">deserts</h3>
-
-                        <div class="box-container">
-                            <div class="box">
-                                <div class="info">
-                                    <h3>GULAB JAMUN</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>DHOKLA</h3>
+                                <p>A soft, spongy & delicious besan dhokla recipe which is an all-time favourite snack!</p>
                             </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>JALEBI</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
+                            <div class="price">49.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>IDLI-SAMBHAR</h3>
+                                <p>Idli Sambar is made with lentils, plenty of spices, mixed vegetables and herbs.</p>
                             </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>RASMALAI</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            <div class="box">
-                                <div class="info">
-                                    <h3>KAJU-KATLI</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem.</p>
-                                </div>
-                                <div class="price">$49.99</div>
-                            </div>
-                            
-                            
+                            <div class="price">69.99 Rs</div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+
+                <!------------------lunch----------------->
+
+                <div class="swiper-slide slide">
+                    <h3 class="title">lunch</h3>
+
+                    <div class="box-container">
+                        <div class="box">
+                            <div class="info">
+                                <h3>dal Makhni</h3>
+                                <p>its is a popular North Indian dish where whole black lentils & red kidney beans are
+                                    slow cooked with spices, butter & cream.</p>
+                            </div>
+                            <div class="price">149.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>shahi chaap gravy</h3>
+                                <p>Shahi Chaap Gravy-It is a smooth chewy version of soya chunks that are binded
+                                    together.</p>
+                            </div>
+                            <div class="price">149.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>paneer butter masala</h3>
+                                <p>it is a rich & creamy curry made with paneer,
+                                    spices, onions, tomatoes, cashews and butter.</p>
+                            </div>
+                            <div class="price">199.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>masala stuff chaap</h3>
+                                <p>a smooth chewy version of soya chunks that are binded together.
+                                    The ingredients that are used to make this easy Soya Chaap from scratch are soy
+                                    chunks, soya beans, all purpose flour, water and salt</p>
+                            </div>
+                            <div class="price">119.99 Rs</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!------------------dinner----------------->
+
+                <div class="swiper-slide slide">
+                    <h3 class="title">dinner</h3>
+
+                    <div class="box-container">
+                        <div class="box">
+                            <div class="info">
+                                <h3>Aloo paratha</h3>
+                                <p>It is made using unleavened dough rolled with a mixture of mashed potato and spices
+                                    (amchur, garam masala)
+                                    which is cooked on a hot tawa with butter or ghee.</p>
+                            </div>
+                            <div class="price">59.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>aloo pyaz paratha</h3>
+                                <p>Paratha are unleavened layered flatbreads made with whole wheat flour (atta) , salt,
+                                    onion, water & ghee or oil.</p>
+                            </div>
+                            <div class="price">49.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>cheez garlic fried rice</h3>
+                                <p>Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan
+                                    and is usually mixed with other ingredients such as eggs,
+                                    cheese, garlic, vegetables, seafood, or meat.</p>
+                            </div>
+                            <div class="price">59.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>lachha paratha</h3>
+                                <p>Laccha paratha is a unique flatbread which can be made with both wheat flour and
+                                    all-purpose flour.
+                                    It is traditionally fried with ghee and becomes crispy and flaky, and the layers can
+                                    be visible from outside.</p>
+                            </div>
+                            <div class="price">49.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>soya chunks curry</h3>
+                                <p>This vegan mock meat curry is the ultimate comfort food! Super delicious, easy to make and is sure to please everyone.</p>
+                            </div>
+                            <div class="price">79.99 Rs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------drinks----------------->
+
+                <div class="swiper-slide slide">
+                    <h3 class="title">drinks</h3>
+
+                    <div class="box-container">
+                        <div class="box">
+                            <div class="info">
+                                <h3>HOT-CHOCOLATE</h3>
+                                <p>Hot chocolate can be made with dark, semisweet, or bittersweet chocolate grated or
+                                    chopped into small pieces and stirred into milk with the addition of sugar.</p>
+                            </div>
+                            <div class="price">99.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>OREO-SHAKE</h3>
+                                <p> it is a cookie sandwich or cream biscuit. It is made by the Nabisco division of
+                                    Mondelēz International..</p>
+                            </div>
+                            <div class="price">99.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>BUTTERSCOTCH SHAKE</h3>
+                                <p>This butterscotch milkshake is a creamy shake ribboned with sweet, rich butterscotch
+                                    sauce.</p>
+                            </div>
+                            <div class="price">99.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>COFFEE</h3>
+                                <p>it is a beverage brewed from the roasted and ground seeds of the tropical evergreen
+                                    coffee plant</p>
+                            </div>
+                            <div class="price">79.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>BANANA SHAKE</h3>
+                                <p>this health drink can help avoid muscle cramps by increasing glycogen reserves and
+                                    potassium levels in the muscles</p>
+                            </div>
+                            <div class="price">109.99 Rs</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!------------------dessert----------------->
+
+                <div class="swiper-slide slide">
+                    <h3 class="title">desert</h3>
+
+                    <div class="box-container">
+                        <div class="box">
+                            <div class="info">
+                                <h3>GULAB JAMUN</h3>
+                                <p>Gulab jamun is an Indian dessert of fried dough balls that are soaked in a sweet,
+                                    sticky sugar syrup.</p>
+                            </div>
+                            <div class="price">159.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>JALEBI</h3>
+                                <p>Jalebi is eaten with curd or rabri (in North India) along with optional other flavors
+                                    such as kewra.</p>
+                            </div>
+                            <div class="price">149.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>RASMALAI</h3>
+                                <p>Ras malai consists of flattened balls of chhena soaked in malai (a type of clotted
+                                    cream) flavoured with cardamom.</p>
+                            </div>
+                            <div class="price">259.99 Rs</div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <h3>KAJU-KATLI</h3>
+                                <p>Kaju means cashew, barfi is often made by thickening milk with sugar and other
+                                    ingredients.</p>
+                            </div>
+                            <div class="price">299.99 Rs</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
     <!-- ----------------------------Menu  ends -------------------------->
 
-        <!-- ----------------------order section start----------------------- -->
 
-        <section class="order">
-            <div class="heading">
-                <span>order now</span>
-                <h3>fast home delivery</h3>
-            </div>
 
-            <form action="">
-                <div class="box-container">
-                    <div class="box">
-                        <div class="inputBox">
-                            <span>full name</span>
-                            <input type="text" placeholder="enter your name">
-                        </div>
-                        <div class="inputBox">
-                            <span>food name</span>
-                            <input type="text" placeholder="food you want">
-                        </div>
-                        <div class="inputBox">
-                            <span>order details</span>
-                            <input type="text" placeholder="speacifics with food">
-                        </div>
-                        <div class="inputBox">
-                            <span>your address</span>
-                            <textarea name="" placeholder="enter your adrress" id="" cols="30" rows="10"></textarea>
-                        </div>
+    <!-- ----------------------order section start----------------------- -->
+
+    <section class="order">
+        <div class="heading">
+            <span>order now</span>
+            <h3>fast home delivery</h3>
+        </div>
+
+        <form action="">
+            <div class="box-container">
+                <div class="box">
+                    <div class="inputBox">
+                        <span>full name</span>
+                        <input type="text" placeholder="enter your name">
                     </div>
+                    <div class="inputBox">
+                        <span>food name</span>
+                        <input type="text" placeholder="food you want">
+                    </div>
+                    <div class="inputBox">
+                        <span>order details</span>
+                        <input type="text" placeholder="speacifics with food">
+                    </div>
+                    <div class="inputBox">
+                        <span>your address</span>
+                        <textarea name="" placeholder="enter your adrress" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
 
-                    <div class="box">
-                        <div class="inputBox">
-                            <span>number</span>
-                            <input type="number" placeholder="enter your number">
-                        </div>
-                        <div class="inputBox">
-                            <span>how much</span>
-                            <input type="number" placeholder="how many you want">
-                        </div>
-                        <div class="inputBox">
-                            <span>when you want</span>
-                            <input type="datetime-local">
-                        </div>
-                        <div class="inputBox">
-                            <span>your address</span>
-                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.607731406607!2d7
+                <div class="box">
+                    <div class="inputBox">
+                        <span>number</span>
+                        <input type="number" placeholder="enter your number">
+                    </div>
+                    <div class="inputBox">
+                        <span>how much</span>
+                        <input type="number" placeholder="how much you want">
+                    </div>
+                    <div class="inputBox">
+                        <span>when you want</span>
+                        <input type="datetime-local">
+                    </div>
+                    <div class="inputBox">
+                        <span>your address</span>
+                        <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.607731406607!2d7
                             7.59074957532003!3d27.605688676240952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce
-                            47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1700588637183!5m2!1sen!2sin" 
+                            47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1700588637183!5m2!1sen!2sin"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
                     </div>
                 </div>
-                <input type="submit" value="order now" class="btn">
-            </form>
-        </section>
-        <!-- ----------------------order section end----------------------- -->
-
-
-        <!-- ---------footer section -------------- -->
-
-        <section class="footer">
-            <div class="icons-container">
-                <div class="icons">
-                    <i class="fa-solid fa-clock"></i>
-                    <h3>opening hours</h3>
-                    <p>07:00am to 10:00pm</p>
-                </div>
-                <div class="icons">
-                    <i class="fa-solid fa-phone"></i>
-                    <h3>phone</h3>
-                    <p>+91 9758122066</p>
-                    <p>+91 8840804669</p>
-                    <p>+91 7505285485</p>
-                    <p>+91 7543802602</p>
-                    
-                </div>
-                <div class="icons">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h3>email</h3>
-                    <a class="mail"  href="mailto:tanishka.agrawal_cs21gla.ac.in;"target="_black" >tanishka.agrawal_cs21gla.ac.in</a>
-                    <a class="mail" href="mailto:rohit.kumar_cs21gla.ac.in;" target="_black">rohit.kumar_cs21gla.ac.in</a>
-                    <a class="mail" href="mailto:shivendra.singh_cs21gla.ac.in;" target="_black">shivendra.singh_cs21gla.ac.in</a>
-                    <a class="mail" href="mailto:yash.sharma_cs21gla.ac.in;" target="_black">yash.sharma_cs21gla.ac.in</a>
-                </div>
-                <div class="icons">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h3>address</h3>
-                    <p>mathura, india 281406</p>
-                </div>
-                
             </div>
-            <div class="sharing">
-                <a href="" class="fa-brands fa-square-facebook" target="_black"></a>
-                <a href="#" class="fa-brands fa-square-twitter" target="_black"></a>
-                <a href="https://instagram.com/quirky_me1?igshid=NzZlODBkYWE4Ng==" target="_black" class="fa-brands fa-square-instagram"></a>
-                <a href="https://www.linkedin.com/in/tanishka-agrawal-9b0886260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_black" class="fa-brands fa-linkedin"></a>
+            <input type="submit" value="order now" class="btn">
+        </form>
+    </section>
+    <!-- ----------------------order section end----------------------- -->
+
+
+    <!-- ---------footer section -------------- -->
+
+    <section class="footer">
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fa-solid fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>07:00am to 10:00pm</p>
             </div>
-            <div class="credit"> created by <span>the fouriers</span> | all rights reserved!</div>
-        </section>
+            <div class="icons">
+                <i class="fa-solid fa-phone"></i>
+                <h3>phone</h3>
+                <p>+91 9758122066</p>
+                <p>+91 7004501404</p>
+                <p>+91 8840804669</p>
+                <p>+91 7505285485</p>
+
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>email</h3>
+                <a class="mail" href="mailto:tanishka.agrawal_cs21gla.ac.in;"
+                    target="_black">tanishka.agrawal_cs21gla.ac.in</a>
+                <a class="mail" href="mailto:rohit.kumar_cs21gla.ac.in;" target="_black">rohit.kumar_cs21gla.ac.in</a>
+                <a class="mail" href="mailto:shivendra.singh_cs21gla.ac.in;"
+                    target="_black">shivendra.singh_cs21gla.ac.in</a>
+                <a class="mail" href="mailto:yash.sharma_cs21gla.ac.in;" target="_black">yash.sharma_cs21gla.ac.in</a>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>address</h3>
+                <p>mathura, india 281406</p>
+            </div>
+
+        </div>
+        <div class="sharing">
+            <a href="https://www.facebook.com/profile.php?id=100007121198515&mibextid=ZbWKwL"
+                class="fa-brands fa-square-facebook" target="_black"></a>
+            <a href="" class="fa-brands fa-square-twitter" target="_black"></a>
+            <a href="https://instagram.com/quirky_me1?igshid=NzZlODBkYWE4Ng==" target="_black"
+                class="fa-brands fa-square-instagram"></a>
+            <a href="https://www.linkedin.com/in/tanishka-agrawal-9b0886260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_black" class="fa-brands fa-linkedin"></a>
+        </div>
+        <div class="credit"> created by <span>the fouriers</span> | all rights reserved!</div>
+    </section>
 
 
+    <!------------------footer section ends---------------->
 
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="food.js"></script>
 </body>
+
 </html>

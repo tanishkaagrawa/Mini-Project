@@ -9,15 +9,6 @@ menuBtn.onclick = () =>{
 };
 
 
-function login(){
-  let log = document.querySelector(".login");
-  log.style.display="block"
-}
-
-function about(){
-  let about = document.querySelector(".");
-  about.style.display="block"
-}
 
 var swiper = new Swiper(".home-slider", {
     grabCursor:true,
@@ -62,3 +53,5 @@ var swiper = new Swiper(".menu-slider", {
         clickable: true,
       },
 });
+
+
